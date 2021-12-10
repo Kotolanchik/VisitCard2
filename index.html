@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstantin Kolodkin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="avatar" src="чччеее.jpg"  alt="Фото не найдено"> <!-- alt - если картинки нет, то вставляется альтернативный текст -->
+           
+            <div class="myInfo">
+            <h1> Колодкин Константин Алексеевич</h1> 
+            <p>Я студент Вятского Государственного Университета</p>     
+            <p>Факультет компьютерных и физико-математических наук, 
+                направление Фундаментальная информатика и информационные
+                технологии, профиль разработка программного обеспечения</p>
+
+            
+             <h4>Мои социальные сети</h4> 
+             <a target="_blank" href="https://vk.com/hosanhere">ВКонтакте</a><!-- target="_blank" переход на новую вкладку -->
+             |
+             <a target="_blank" href="https://github.com/Kotolanchik">GitHub</a>
+             |
+             <a target="_blank" href="https://www.instagram.com/kotolanchik">Instagram</a>               
+            </div>
+        </div>
+           
+        <!-- неупорядоченный список Unordered Lists ul -->
+        <!-- Упорядоченный список Ordered list -->
+
+        <div class="card bg-purple">
+
+            <h2>Мои хобби</h2>
+            <ol type="I" class="list">
+                <li>Программирование</li>
+                <li>Студентческие сервисные отряды</li>
+                <li>Вождение</li>
+                <li>Знакомства</li>
+            </ol>
+
+        </div>
+
+        <div class="card bg-green">
+
+            <h2>Навыки</h2>
+            <table class="table" >              
+                <tr>                             
+                    <td>Программирование на: </td>      
+                    <td>C#</td>
+                    <td>Java</td>
+                    <td>SQL</td>
+                </tr><!-- tr - table row td - table data th- table header -->
+                <tr>
+                    <td> Создание сайтов: </td>
+                    <td> HTML </td>
+                    <td> CSS </td>
+                    <td> JavaScript </td> 
+                </tr>
+            </table>
+
+        </div>
+        
+        <div class="card bg-brown">
+
+            <h2>Мои дела или просто какие-то ссылки</h2><!-- Пример многостраничного сайта -->
+            
+            <ul class="link-list">
+                <li><a href="ListProject.html">Посмотреть список моих проектов</a></li>
+                <li><a href="ListProject.html">Посмотреть список моих проектов</a></li>
+                <li><a href="ListProject.html">Посмотреть список моих проектов</a></li>
+            </ul>
+        </div>
+
+
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/"> 
+            <!--Поскольку атрибут for и id совпадают то при нажатии -->
+            <!-- на текст в лейбле мы автоматически перейдем на поле ввода данных в инпут -->
+                <div class="row">
+                    <div class="form-gr">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя">      
+                    </div>
+
+                    <div class="form-gr">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите ваше email">  
+                    </div>
+                </div>
+                <div class="form-gr ">
+                <label for="text">Ваш текст:</label>
+                <textarea id="text"></textarea>
+                </div>
+                
+                <input class="btn" type="submit" value="Связаться" > 
+
+            </form>
+        </div>
+</div>
+</body>
+</html>
